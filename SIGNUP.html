@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Import Google Icon Font-->
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+   
+  <title>materialize css </title>
+  <style>
+      .row{
+          padding-top: 20px;
+          padding-left: 40px;
+        }
+        
+        *{
+                text-transform: capitalize;
+                font-family: 'Merriweather', serif;
+            }
+            
+                
+            nav{
+              border: solid 1px #666;
+              background-color: black;
+              
+            }
+            body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-wraper teal black-text">
+            <div class="container">
+              <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+              </a>
+              <a href="index.html" class="brand-logo left hide-on-med-and-down">
+                 24/7 GADGETS
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">home </a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#">sign-up </a></li>
+              </ul>
+            </div>
+          </nav>
+          <ul class="sidenav" id="mobile-links">
+            <li><a href="#" class="hoverable">home </a></li>
+            <li><a href="#" class="hoverable">about</a></li>
+            <li><a href="home.html"class="hoverable">sign-up </a></li>
+           
+          </ul>
+    </header>
+
+     
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col l6 s12">
+            <img src="boy.jpg" alt="" class="responsive-img">
+        </div>
+        <div class="col l6 s12">
+            <div class="row">
+            </div id="form">
+       
+            <div class="row">
+             <form name="myform" class="col s12"  id="form" action="" method="post">
+               <div class="row">
+                 <div class="input-field col l3 s6">
+                   <input name="uname" id="first_name" type="text" class="validate">
+                   <label for="first_name">First Name</label>
+                 </div>
+                 <div class="input-field col l3 s6">
+                   <input name="lname" id="last_name" type="text" class="validate">
+                   <label for="last_name">Last Name</label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="input-field col l3 s12">
+                   <input name= "pwd" id="password" type="password" class="validate">
+                   <label for="password">Password</label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="input-field col l3 s12">
+                   <input name="email" id="email" type="email" onclick="validateEmail()" class="validate">
+                   <label for="email">Email</label>
+                 </div>
+               </div>
+               <div input type = "submit" value = "Submit" id= "submit" class="btn waves-effect">SUBMIT</div>
+                 </div>
+               </div>
+              </form>
+            </div></div>
+    </div>
+    
+</div>
+
+
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">24/7 gadgets</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">contact us.</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="index.html"><i class="material-icons">beenhere</i></a></li>
+          <li><a class="grey-text text-lighten-3" href="about.html"><i class="material-icons">call</i></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2021 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+$('.sidenav').sidenav();
+
+});
+</script>  
+
+<script>
+  $(document).ready(function(){
+    $('#submit').click(function(){
+      var fname=$('#first_name').val();
+      var lname=$('#last_name').val();
+      var email=$('#email').val();
+      var pwd=$('#password').val();
+  
+      if(fname=="" ||lname==""|| email==""|| pwd==""){
+           alert("please fill data");
+           return false
+      }
+      $.ajax({
+              type:"POST",
+              url:"data.html",
+              data:{
+                fname:fname,
+                lname:lname,
+                email:email,
+                pwd:pwd,
+              },
+              success:function(data){
+                $('#form').trigger();
+                alert("data submitted");
+              }
+      });
+    });
+  });
+  
+  
+  
+  
+  </script>
+  
+ </body>  
+</html>

@@ -4,25 +4,446 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="high.css">
-</head>
+    <title>TOP TEN MOBILE</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+            *{
+                text-transform: capitalize;
+                font-family: 'Merriweather', serif;
+            }
+            
+            
+            header{
+                background-image: url(Colorful.gif);
+                background-size: cover;
+                min-height: 800px;
+                background-position: center;
+                
+            }
+            nav{
+              border: solid 1px #666;
+            }
+            input{
+              margin-top: 100px;
+            }
+           
+           .card-1{
+             background-image: url(k.jpg);
+             background-size: cover;
+             width: 100%;
+             
+           }
+           footer{
+             background-color: #212121;
+           }
+            @media  screen and (max-width: 670px){
+              header{
+                min-height: 400px;
+              }
+              
+            }
+            @media  screen and (max-width: 670px){
+              .card-1{
+                min-height: 50%;
+              }
+              
+            }
+            form input{
+              color: white;
+              
+            }
+              
+            
+    </style>
+</head> 
 <body>
+    <header>
+
+   
+    
+    
+    <nav class="nav-wraper transparent">
+        <div class="container">
+          <a href="" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="index.html" class="brand-logo left hide-on-med-and-down">
+             24/7 GADGETS
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="breadcrumb">home </a></li>
+            <li><a href="about.html"class="breadcrumb">about</a></li>
+            <li><a href="home.html"class="breadcrumb">sign-up </a></li>
+            
+          </div>
+      </nav>
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="#" class="hoverable">home </a></li>
+        <li><a href="#" class="hoverable">about</a></li>
+        <li><a href="#"class="hoverable">sign-up </a></li>
+       
+      </ul>
+      <div class="container white-text">
+         <h5 class="text-teal black">ragister for free daily updates</h5>
+         <marquee scroll="10">hurry limited offer  </marquee>
+
+      
+
+       </div id="form">
+       
+       <div class="row">
+        <form name="myform" class="col s12"  id="form" action="" method="post">
+          <div class="row">
+            <div class="input-field col l3 s6">
+              <input name="uname" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col l3 s6">
+              <input name="lname" id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l3 s12">
+              <input name= "pwd" id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l3 s12">
+              <input name="email" id="email" type="email" onclick="validateEmail()" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div input type = "submit" value = "Submit" id= "submit" class="btn waves-effect">SUBMIT</div>
+            </div>
+          </div>
+         </form>
+      </div>
+            
+       </div>
+
+       
+
+    </header> 
     <div class="container">
-        <div class="highway"></div>
-        <div class="city"></div>
-        <div class="car" id="mySoundClip">
-            <img src="car.png" >
+      <h3>top 10 mobile under 20,000</h3>
+    </div>
+
+    <main class="card-1 responsive-img">
+<div class="container">
+
+  <div class="col s12 m7">
+  
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/poco-x3-pro-steel-blue-128-gb/p/itm92bc566db15d8?pid=MOBGFKNFXBYGHFHJ&lid=LSTMOBGFKNFXBYGHFHJM8QVIC&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=SEARCH&iid=cd77c6ad-fbad-4b55-8fe2-75459705f5da.MOBGFKNFXBYGHFHJ.SEARCH&ppt=browse&ppn=browse&ssid=6937undqxc0000001624271274919&qH=22bbfb4cd5d2103a"><img src="poco.jpeg"> </a> 
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>POCO X3 Pro (Steel Blue, 128 GB)  (6 GB RAM)#JustHere</h4>
+          <p> For fast computing on the move, impressive photos, and all-day-long, uninterrupted performance, the POCO X3 Pro is the right device for you. This smartphone features the Qualcomm Snapdragon 860 for smooth function, 16.94-cm (6.67) FHD+ Display for clear visuals, and a 5160 mAh Battery to ensure that your smartphone does not run out of battery quickly..</p>
+        <h5> just for rs. 18,999</h5>
+      
         </div>
-
-        <div class="wheels">
-            <img src="wheel.png" class="ft" >
-            <img src="wheel.png" class="bt">
+        <div class="card-action">
+          
+       <a href="https://www.flipkart.com/poco-x3-pro-steel-blue-128-gb/p/itm92bc566db15d8?pid=MOBGFKNFXBYGHFHJ&lid=LSTMOBGFKNFXBYGHFHJM8QVIC&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=SEARCH&iid=cd77c6ad-fbad-4b55-8fe2-75459705f5da.MOBGFKNFXBYGHFHJ.SEARCH&ppt=browse&ppn=browse&ssid=6937undqxc0000001624271274919&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
         </div>
+      </div>
+    </div>
+  </div>
 
-     </div>
 
+  <div class="col s12 m7">
+    
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/realme-8-pro-infinite-black-128-gb/p/itmaa9c73f5a987c?pid=MOBGYV98E5Z8NHTZ&lid=LSTMOBGYV98E5Z8NHTZ8NUBYR&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=SEARCH&iid=cd77c6ad-fbad-4b55-8fe2-75459705f5da.MOBGYV98E5Z8NHTZ.SEARCH&ppt=browse&ppn=browse&ssid=6937undqxc0000001624271274919&qH=22bbfb4cd5d2103a">  <img src="realme.jpeg"> </a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>realme 8 Pro (Infinite Black, 128 GB)  (6 GB RAM)</h4>
+          <p>The realme 8 Pro features a Tilt-shift mode and the Tilt-shift Time Lapse video so that you can add a creative perspective to the content that you create. Thanks to the Super AMOLED Display, your favourite movies, games, and more are more bright and vivid on screen. And, thanks to the 4500 mAh battery, you can stream content, game, and more without worrying about recharging your phone.</p>
+          <h5> just for rs. 17,999</h5>
+        </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/realme-8-pro-infinite-black-128-gb/p/itmaa9c73f5a987c?pid=MOBGYV98E5Z8NHTZ&lid=LSTMOBGYV98E5Z8NHTZ8NUBYR&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=SEARCH&iid=cd77c6ad-fbad-4b55-8fe2-75459705f5da.MOBGYV98E5Z8NHTZ.SEARCH&ppt=browse&ppn=browse&ssid=6937undqxc0000001624271274919&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col s12 m7">
+   
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/vivo-y51a-titanium-sapphire-128-gb/p/itm72ed89f10c598?pid=MOBFZ2U4UEFXH3HF&lid=LSTMOBFZ2U4UEFXH3HFUBH4KZ&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_27&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFZ2U4UEFXH3HF.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a"> <img src="vivo.jpeg"> </a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>ViVO Y51A (Titanium Sapphire, 128 GB)  (8 GB RAM)</h4>
+          <p>
+            With a 48 MP AI Triple Rear Camera, 8 MP Super Wide-angle Camera, and a 5000 mAh Battery, the Vivo Y51A is the right smartphone to post selfies, videos, and posts on your social media accounts all day long. This smartphone features a Side Fingerprint Sensor for easy unlocking, a 16.71 cm (6.58) Halo FullView Display for stunning visuals, and the Qualcomm Snapdragon 6-series processor for fast performance.
+         </p>
+         <h5>
+          just for.₹17,990
+         </h5>
+        </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/vivo-y51a-titanium-sapphire-128-gb/p/itm72ed89f10c598?pid=MOBFZ2U4UEFXH3HF&lid=LSTMOBFZ2U4UEFXH3HFUBH4KZ&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_27&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFZ2U4UEFXH3HF.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col s12 m7">
+    
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/samsung-galaxy-m31-iceberg-blue-128-gb/p/itmed6043337ac0e?pid=MOBFYZ8Y9VJNACEM&lid=LSTMOBFYZ8Y9VJNACEMEBJFED&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_29&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFYZ8Y9VJNACEM.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a">  <img src="samsung.jpeg"></a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>SAMSUNG Galaxy M31 (Iceberg blue, 128 GB)  (6 GB RAM)</h4>
+          <p>
+            64MP + 8MP + 5MP + 5MP rear camera | 32MP front facing camera 16.21 centimeters (6.4-inch) FHD+ capacitive touchscreen with 2340 x 1080 pixels resolution, 404 ppi pixel density and 16M color support Memory, Storage & SIM: 6GB RAM | 64GB storage expandable up to 512GB | Dual SIM with dual standby (4G+4G) Android v10.0 operating system with 2.3GHz + 1.7GHz Exynos 9611 Octa core processor 6000mAH lithium-ion battery 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase Box also includes: Travel Adapter, USB Cable, Ejection Pin, User Manual Fast face unlock and fingerprint sensor | Dual SIM (nano+nano) with dual standby and dual VoLTE , Dedicated Sim slot;Widevine L1 certification for HD streaming</p>
+        <h5> just for.₹16,990</h5>
+          </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/samsung-galaxy-m31-iceberg-blue-128-gb/p/itmed6043337ac0e?pid=MOBFYZ8Y9VJNACEM&lid=LSTMOBFYZ8Y9VJNACEMEBJFED&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_29&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFYZ8Y9VJNACEM.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col s12 m7">
+    
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/vivo-y20g-purist-blue-128-gb/p/itm4f2cd46459e6c?pid=MOBFZX2GY4KVY6FU&lid=LSTMOBFZX2GY4KVY6FUYQKFLC&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_31&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFZX2GY4KVY6FU.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a">  <img src="vivo22.jpeg"></a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>ViVO Y20G (Purist Blue, 128 GB)  (6 GB RAM)</h4>
+          <p>The Vivo Y20G smartphone comes with 13MP+2MP+2MP triple rear camera, 8MP Selfie Camera, MediaTek Helio G80 octa core processor, 6GB RAM, 128GB internal memory expandable up to 1 TB, 16.55 cm (6.51") FullView Display, a massive 5000mAh battery (C Type) with 18W fast charging..</p>
+        <h5>just for.₹14,990</h5>
+        </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/vivo-y20g-purist-blue-128-gb/p/itm4f2cd46459e6c?pid=MOBFZX2GY4KVY6FU&lid=LSTMOBFZX2GY4KVY6FUYQKFLC&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_31&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFZX2GY4KVY6FU.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col s12 m7">
+    
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <img src="narzo.jpeg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>realme Narzo 30 Pro 5G (Sword Black, 128 GB)  (8 GB RAM)</h4>
+          <p>   If you love playing games and are looking for a smartphone that can help you enjoy a smooth and responsive gaming experience, then say hello to the Realme Narzo 30 Pro 5G smartphone. Boasting a powerful Dimensity 800U 5G processor, this smartphone can easily handle any task. You can capture stunning photos wherever you are as this phone comes with a 48 MP triple camera setup. Furthermore, its Super Nightscape mode helps you click clear and vivid photos even in low-light conditions..</p>
+          <h5>just for.₹17,999</h5>
+        </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/realme-narzo-10a-so-blue-32-gb/p/itmbeb412dade152" class="btn green">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col s12 m7">
+    
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/realme-x7-5g-nebula-128-gb/p/itm3973962c2c7bb?pid=MOBFZGWXDBHQZMC9&lid=LSTMOBFZGWXDBHQZMC9JAJHX0&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_34&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFZGWXDBHQZMC9.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a"><img src="x7.jpeg"> </a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>realme X7 5G (Nebula, 128 GB)  (8 GB RAM)</h4>
+          <p>
+            With the realme X7, boredom will become a word you hardly use, thanks to this mobile phone’s innovative features. It has a Super AMOLED 16.3 cm (6.4) Display that gives you an expansive and immersive view of your favourite content and games. With 50 W SuperDart Charge and the Powerful Battery, your device will be quickly charged in a matter of minutes. And, its slim and lightweight design will make it easy for you to hold and use the device.
+            </p>
+            <h5>just for.₹18,999</h5>
+          </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/realme-x7-5g-nebula-128-gb/p/itm3973962c2c7bb?pid=MOBFZGWXDBHQZMC9&lid=LSTMOBFZGWXDBHQZMC9JAJHX0&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_34&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFZGWXDBHQZMC9.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col s12 m7">
+  
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/oppo-f17-pro-metallic-white-128-gb/p/itm4e2fc7ddc621c?pid=MOBFVYVXYXFSV2CH&lid=LSTMOBFVYVXYXFSV2CH3AZVSO&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_40&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFVYVXYXFSV2CH.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a">  <img src="f17.jpeg"></a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>OPPO F17 Pro (Metallic White, 128 GB)  (8 GB RAM)</h4>
+          <p>
+            Indulge yourself in the content that you’re watching on this stunning Oppo F17 Pro smartphone as it comes with a 16.34-cm (6.43) Full HD+ screen. The 4 rear cameras (48 MP + 8 MP + 2 MP + 2 MP) and 2 front cameras (16 MP + 2 MP) let you take your love for portrait photography up a notch. What’s more, battery woes will be the last thing on your mind as this phone comes with a massive battery.</p>
+            <h5>just for.₹19,999</h5>
+          </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/oppo-f17-pro-metallic-white-128-gb/p/itm4e2fc7ddc621c?pid=MOBFVYVXYXFSV2CH&lid=LSTMOBFVYVXYXFSV2CH3AZVSO&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_40&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFVYVXYXFSV2CH.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m7">
+    
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/redmi-note-10s-shadow-black-128-gb/p/itm3ca65d9e1c1e9?pid=MOBG3YW3BVGUZ5FA&lid=LSTMOBG3YW3BVGUZ5FAUUXVCP&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_45&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBG3YW3BVGUZ5FA.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a">  <img src="10s.jpeg"> </a>
+
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>REDMI Note 10S (Shadow Black, 128 GB)  (6 GB RAM)</h4>
+          <p>
+            Quad Rear Camera Setup: 64 MP Wide-angle Camera (f/1.79 Aperture, 1/1.97 inch Sensor Size, 0.7μm Pixel Size) + 8 MP Ultra-wide Angle Camera (f/2.2 Aperture, FOV: 118 Degree) + 2 MP Macro Camera (f/2.4 Aperture) + 2 MP Depth Sensor (f/2.4 Aperture), Rear Camera Photography Features: 64MP mode, Night mode, AI Beautify, AI Portrait mode with Bokeh and Depth Control, Video Features: Video Macro mode, Pro Time-lapse Video, Slow motion Video.</p>
+            <h5>just for.₹17,135</h5>
+          </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/redmi-note-10s-shadow-black-128-gb/p/itm3ca65d9e1c1e9?pid=MOBG3YW3BVGUZ5FA&lid=LSTMOBG3YW3BVGUZ5FAUUXVCP&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_45&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBG3YW3BVGUZ5FA.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy nowk</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m7">
+  
+    <div class="card horizontal right-align">
+      <div class="card-image">
+        <a href="https://www.flipkart.com/motorola-g60-frosted-champagne-128-gb/p/itm9154ecfab780b?pid=MOBFWSF8KAWGYV9A&lid=LSTMOBFWSF8KAWGYV9ABTQCZJ&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_47&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFWSF8KAWGYV9A.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a"><img src="moto.jpeg"> </a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>MOTOROLA G60 (Frosted Champagne, 128 GB)  (6 GB RAM)</h4>
+          <p>
+            The moto g60 enables you to capture spectacular selfies wherever you are, thanks to its 32 MP selfie camera, the Quad Pixel technology, and LED flash. Thanks to the smooth 17.2 cm (6.8) HDR10 Display, you can enjoy a lifelike experience while streaming content, gaming, and more. And, thanks to the powerful 6000 mAh battery, you can enjoy using your mobile phone for all that you need, without any low-battery interruptions for a long time.</p>
+       <h5>just for.₹17,999</h5>
+          </div>
+        <div class="card-action">
+          <a href="https://www.flipkart.com/motorola-g60-frosted-champagne-128-gb/p/itm9154ecfab780b?pid=MOBFWSF8KAWGYV9A&lid=LSTMOBFWSF8KAWGYV9ABTQCZJ&marketplace=FLIPKART&q=mobile+under+20000&store=tyy%2F4io&srno=s_2_47&otracker=search&otracker1=search&fm=SEARCH&iid=b8f90b9e-33d9-49f9-aea9-48d02f23bdf6.MOBFWSF8KAWGYV9A.SEARCH&ppt=sp&ppn=sp&qH=22bbfb4cd5d2103a" class="btn green waves-effect">buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+ </main>
+
+
+
+    
+
+
+ <footer>
+   <div class="container valign-wrapper white-text">
+   top gadgets 
+  
+  <div class="row white-text">
+    <div class="col">
+      <ul>
+        <li>facebook</li>
+        <li>instagram</li>
+        <li>twitter</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <li>anout us</li>
+        <li>contact</li>
+        <li>details</li>
+        <li>adress</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+       <a href="https://www.facebook.com/"> <li><i class="material-icons">facebook</i></li> </a>
+       <a href="https://www.instagram.com/"> <li><i class="material-icons">language</i></li> </a>
+       <a href="home.html"> <li><i class="material-icons">star rate</i></li> </a> 
+ 
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+<a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
 
  
+ </footer>
+     
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
+         $(document).ready(function(){
+          $('.sidenav').sidenav();
+           });
+     </script>
+     
+
+<script>
+$(document).ready(function(){
+  $('#submit').click(function(){
+    var fname=$('#first_name').val();
+    var lname=$('#last_name').val();
+    var email=$('#email').val();
+    var pwd=$('#password').val();
+
+    if(fname=="" ||lname==""|| email==""|| pwd==""){
+         alert("please fill data");
+         return false
+    }
+    $.ajax({
+            type:"POST",
+            url:"data.html",
+            data:{
+              fname:fname,
+              lname:lname,
+              email:email,
+              pwd:pwd,
+            },
+            success:function(data){
+              $('#form').trigger();
+              alert("data submitted");
+            }
+    });
+  });
+});
+
+
+
+
+</script>
+
+
+
+            
 </body>
 </html>
